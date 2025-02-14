@@ -17,7 +17,6 @@
     <bool name="config_enableAppWidgetService">true</bool>
     <bool name="config_enableDtmfLocalTone">false</bool>
     <bool name="config_enableFusedLocationOverlay">false</bool>
-    <bool name="config_enableGeofenceOverlay">false</bool>
     <bool name="config_enableNetworkLocationOverlay">true</bool>
     <bool name="config_enableSoftApWPS">true</bool>
     <bool name="config_enableWifiDisplay">false</bool>
