@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
 	treble-overlay-infinix-note5 \
 	treble-overlay-infinix-s4 \
 	treble-overlay-infinix-zero6 \
+	treble-overlay-itel-l5002 \
 	treble-overlay-lenovo-k5pro \
 	treble-overlay-lenovo-s5 \
 	treble-overlay-lenovo-s5pro \
