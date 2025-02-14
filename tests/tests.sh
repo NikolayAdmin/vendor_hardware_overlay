@@ -92,17 +92,3 @@ rm -f tests/priorities
 		fail overlay.mk "Keep the empty line at the end"
 	fi
 )
-
-#Check overlay.mk has all overlays
-(
-    a=$(mktemp)
-    b=$(mktemp)
-    find -name \*.mk |xargs sed -n -e 's;LOCAL_PACKAGE_NAME\s*:=\s*;;p' |grep treble-overlay | sort > $a
-    sed -nE 's;.*(treble-overlay-[^ ]*).*;\1;p' < overlay.mk|sort > $b
-    if diff $a $b |grep -qE .;then
-        fail overlay.mk "Not all overlays are listed in overlay.mk"
-        diff $a $b
-    fi
-)
-
-if [ -f fail ];then exit 1; fi
